@@ -1,0 +1,33 @@
+.characterCard {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+.likeContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.likeContainer svg {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.characterImage {
+	width: 100%;
+	aspect-ratio: 1/1.5;
+	object-fit: cover;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.characterDetails {
+	/* background-color: aqua; */
+	padding: 10px;
+	text-align: center;
+}

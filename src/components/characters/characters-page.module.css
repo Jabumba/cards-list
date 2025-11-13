@@ -1,0 +1,30 @@
+.charactersPage {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 25px;
+	width: 80%;
+	margin: 0 auto;
+
+	/* background-color: blue; */
+	padding: 5px;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+.charactersList {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+
+	/* grid-template-rows: repeat(auto-fit, 200px); */
+	gap: 20px;
+	width: 100%;
+
+	/* background-color: red; */
+}
+
+@media (width <= 425px) {
+	.charactersPage {
+		width: 100%;
+	}
+}
