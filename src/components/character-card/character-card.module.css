@@ -1,13 +1,14 @@
 .characterCard {
 	display: flex;
 	flex-direction: column;
+	max-width: 400px;
 	border: 2px solid black;
 	border-radius: 10px;
 }
 
 .likeContainer {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
 	padding: 10px 0;
 }
@@ -16,6 +17,19 @@
 	width: 30px;
 	height: 30px;
 	cursor: pointer;
+	transition: fill 0.5s;
+}
+
+.likeContainer svg:hover {
+	fill: grey;
+}
+
+.likeContainer svg path {
+	transition: stroke 1s;
+}
+
+.likeContainer svg:hover path {
+	stroke: grey;
 }
 
 .characterImage {
@@ -27,7 +41,6 @@
 }
 
 .characterDetails {
-	/* background-color: aqua; */
 	padding: 10px;
 	text-align: center;
 }
